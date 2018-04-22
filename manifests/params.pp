@@ -29,7 +29,6 @@ class nagios::params {
     'nagios-plugins-http',
     'nagios-plugins-ide_smart',
     'nagios-plugins-ifstatus',
-    'nagios-plugins-linux_raid',
     'nagios-plugins-load',
     'nagios-plugins-log',
     'nagios-plugins-mailq',
