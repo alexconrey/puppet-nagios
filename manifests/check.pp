@@ -8,7 +8,7 @@ define nagios::check (
   $description         = hiera("nagios::check::${title}::description", $title),
   $nrpe_options        = hiera("nagios::check::${title}::nrpe_options", '-t 15'),
   $ensure              = hiera("nagios::check::${title}::ensure", 'present'),
-#  $servicegroups       = hiera("nagios::check::${title}::description",[]),
+  $servicegroups       = hiera("nagios::check::${title}::description",[]),
   $check_period        = hiera("nagios::check::${title}::check_period",undef),
   $contact_groups      = hiera("nagios::check::${title}::contact_groups",undef),
   $max_check_attempts  = hiera("nagios::check::${title}::max_check_attempts",undef),
